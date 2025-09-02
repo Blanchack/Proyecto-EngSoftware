@@ -18,6 +18,7 @@ ussuario: son la percinos.
 1. Las solicitudes ingresadas deben provenir de usuarios verificados.
 2. Las solicitudes ingresadas verifican su ubicación a traves de un sistema externo de geolocalización
 
-# Agentes
-cooperta
-ussuario: son la per
+
+# Actores
+cooperativas de reciclaje
+vecinos

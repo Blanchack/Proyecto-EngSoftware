@@ -9,14 +9,14 @@ El programa buscar modernizar el proceso de recoleccion de basura, mejorando tie
 2. El sistema debe permitir a los vecinos ingresar solicitudes para la recolección de sus desperdicios.
 3. El sistema debe permitir a las cooperativas planificar y visualizar las mejores rutas de recolección.
 4. El sistema debe permitir a las cooperativas revisar datos históricos.
-5. El sistema debe permitir a las cooperativas reportar el resultado de cada retiro y emitir comprobantes para los ve
-ussuario: son la percinos.
+5. El sistema debe permitir a las cooperativas reportar el resultado de cada retiro y emitir comprobantes para los vecinos
 6. El sistema debe permitir a los vecinos revisar el estado de su solicitud.
 7. El sistema debe permitir a los vecinos y a las cooperativas ver una tabla de clasificación que muestre a los vecinos que mas reciclan.
 
 # Requisitos no funcionales
 1. Las solicitudes ingresadas deben provenir de usuarios verificados.
 2. Las solicitudes ingresadas verifican su ubicación a traves de un sistema externo de geolocalización
+
 
 
 # Actores

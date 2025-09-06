@@ -12,13 +12,15 @@ El programa buscar modernizar el proceso de recoleccion de basura, mejorando tie
 5. El sistema debe permitir a las cooperativas reportar el resultado de cada retiro y emitir comprobantes para los vecinos
 6. El sistema debe permitir a los vecinos revisar el estado de su solicitud.
 7. El sistema debe permitir a los vecinos y a las cooperativas ver una tabla de clasificación que muestre a los vecinos que mas reciclan.
+8. El sistema debe permitir la utilización del mismo de 2 modos, conductor y administrador.
 
 # Requisitos no funcionales
 1. Las solicitudes ingresadas deben provenir de usuarios verificados.
-2. Las solicitudes ingresadas verifican su ubicación a traves de un sistema externo de geolocalización
-
-
+2. Las solicitudes ingresadas verifican su ubicación a traves de un sistema externo de geolocalización.
+3. El software cuenta con tecnologia de "text to speech" para permitir el uso a personas con discapacidad visual.
+4. El sistema debe contar tanto con una aplicación móvil como con una aplicación web.
 
 # Actores
-cooperativas de reciclaje
-vecinos
+Conductores de los camiones recolectores:
+Administrador del centro de recolección:
+Vecinos:

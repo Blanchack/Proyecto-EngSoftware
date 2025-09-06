@@ -16,7 +16,7 @@ El programa buscar modernizar el proceso de recoleccion de basura, mejorando tie
 
 # Requisitos no funcionales
 1. Las solicitudes ingresadas deben provenir de usuarios verificados.
-2. Las solicitudes ingresadas verifican su ubicación a traves de un sistema externo de geolocalización.
+2. Las solicitudes ingresadas verifican su ubicación a traves de un sistema externo de geolocalización a tiempo real.
 3. El software cuenta con tecnologia de "text to speech" para permitir el uso a personas con discapacidad visual.
 4. El sistema debe contar tanto con una aplicación móvil como con una aplicación web.
 pPICOOOO WIDER

@@ -19,7 +19,7 @@ El programa buscar modernizar el proceso de recoleccion de basura, mejorando tie
 2. Las solicitudes ingresadas verifican su ubicación a traves de un sistema externo de geolocalización a tiempo real.
 3. El software cuenta con tecnologia de "text to speech" para permitir el uso a personas con discapacidad visual.
 4. El sistema debe contar tanto con una aplicación móvil como con una aplicación web.
-pPICOOOO WIDER
+
 # Actores
 Conductores de los camiones recolectores:
 Administrador del centro de recolección:

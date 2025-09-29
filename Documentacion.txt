@@ -1,5 +1,5 @@
 Documentación
-Caso de uso: Ver recibo
+Caso de uso UC1: Ver recibo
 Actor principal: Vecino
 Actores involucrados:
   - Vecino: ver recibo
@@ -8,4 +8,15 @@ Precondiciones:
   - El vecino debe ser un usuario verificado.
   - El vecino debe tener algun caso abierto.
 Post condiciones:
-  - El vecino recibe el recibo correspondiente.
+  - El vecino obtiene el recibo correspondiente.
+Escenario principal de exito (flujo básico)
+  1 El vecino solicita su recibo, ingresando su codigo asociado.
+  2 la cooperativa recibe la solicitud
+  3 La cooperativa genera y entrega el recibo al vecino
+  4 El vecino obtiene y revisa su recibo
+Extensiones:
+  1' El vecino ingresa el codigo incorrecto
+    - Se genera un mensaje de error
+    - El vecino tiene la opción de ingresar un codigo nuevamente
+    - Si es correcto se continúa con el paso 2
+  2' 

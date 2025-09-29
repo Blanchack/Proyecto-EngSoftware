@@ -19,4 +19,10 @@ Extensiones:
     - Se genera un mensaje de error
     - El vecino tiene la opción de ingresar un codigo nuevamente
     - Si es correcto se continúa con el paso 2
-  2' 
+  2' La cooperativa no recibe la solicitud.
+    - Internamente se intenta 2 veces mas
+    - En caso de seguir fallando se le notifica al vecino
+    - Se rellena la información con los mismo datos
+    - El vecino tiene la opcion de enviar nuevamente
+    - Si esta vez la solicitud es correcta continuar con el paso 3, de lo contrario repetir la extensión 2'
+

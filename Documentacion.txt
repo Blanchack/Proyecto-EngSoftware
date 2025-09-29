@@ -1,0 +1,11 @@
+Documentación
+Caso de uso: Ver recibo
+Actor principal: Vecino
+Actores involucrados:
+  - Vecino: ver recibo
+  - Cooperativa: emitir el recibo
+Precondiciones:
+  - El vecino debe ser un usuario verificado.
+  - El vecino debe tener algun caso abierto.
+Post condiciones:
+  - El vecino recibe el recibo correspondiente.

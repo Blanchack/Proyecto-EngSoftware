@@ -26,3 +26,18 @@ Extensiones:
     - El vecino tiene la opcion de enviar nuevamente
     - Si esta vez la solicitud es correcta continuar con el paso 3, de lo contrario repetir la extensión 2'
 
+Caso de uso UC2: Revisar la ruta
+Actor principal: Conductor
+Actores involucrados: 
+  - Cooperativa: Confirmar ruta para el conductor
+  - Conductor: Revisar la ruta
+Precondiciones:
+  - La cooperativa visualiza varias opciones de rutas
+Postcondiciones:
+  - El conductor puede ver la ruta a seguir.
+Escenario principal de exito (flujo)
+  - La cooperativa escoge la ruta a seguir
+  - Se le envia la ruta al conductor
+  - Conductor recibe la ruta correctamente.
+Extensiones:
+  1' 

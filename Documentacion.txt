@@ -40,4 +40,8 @@ Escenario principal de exito (flujo)
   - Se le envia la ruta al conductor
   - Conductor recibe la ruta correctamente.
 Extensiones:
-  1' 
+  1' Problemas en la ruta
+  - El conductor da aviso de algun problema en la ruta a la cooperativa
+  - La cooperativa revisa alternativas para la ruta
+  - Se actualiza la ruta del conductor
+

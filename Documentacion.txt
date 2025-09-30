@@ -1,30 +1,25 @@
 Documentación
-Caso de uso UC1: Ver recibo
+Caso de uso UC1: Ingresar Solicitud
 Actor principal: Vecino
 Actores involucrados:
-  - Vecino: ver recibo
-  - Cooperativa: emitir el recibo
+  - Vecino: ingresar la solicitud
+  - Servicio de geolocalización: verificar la ubicación del vecino
 Precondiciones:
   - El vecino debe ser un usuario verificado.
-  - El vecino debe tener algun caso abierto.
 Post condiciones:
-  - El vecino obtiene el recibo correspondiente.
+  - La cooperativa visualiza la solicitud correctamente.
+  - Vecino obtiene un recibo con la información del caso ingresado exitosamente
 Escenario principal de exito (flujo básico)
-  1 El vecino solicita su recibo, ingresando su codigo asociado.
-  2 la cooperativa recibe la solicitud
-  3 La cooperativa genera y entrega el recibo al vecino
-  4 El vecino obtiene y revisa su recibo
+  1. El vecino ingresa su solicitud de reciclaje.
+  2. El servicio de geolocalización verificar la ubicación del vecino.
+  3. Con la respuesta del servicio, el sistema asigna el caso a la cooperativa que corresponda.
+  4. La cooperativa recibe con exito la solicitud para su procesamiento.
 Extensiones:
-  1' El vecino ingresa el codigo incorrecto
-    - Se genera un mensaje de error
-    - El vecino tiene la opción de ingresar un codigo nuevamente
-    - Si es correcto se continúa con el paso 2
-  2' La cooperativa no recibe la solicitud.
-    - Internamente se intenta 2 veces mas
-    - En caso de seguir fallando se le notifica al vecino
-    - Se rellena la información con los mismo datos
-    - El vecino tiene la opcion de enviar nuevamente
-    - Si esta vez la solicitud es correcta continuar con el paso 3, de lo contrario repetir la extensión 2'
+  3' El sistema recibe una señal de error desde el servicio de geolocalización
+    - El sistema intente denuevo hasta 3 veces.
+    - Si el error persiste se le notifica al vecino para intentar denuevo
+    
+  
 
 Caso de uso UC2: Revisar la ruta
 Actor principal: Conductor
@@ -44,4 +39,5 @@ Extensiones:
   - El conductor da aviso de algun problema en la ruta a la cooperativa
   - La cooperativa revisa alternativas para la ruta
   - Se actualiza la ruta del conductor
+
 

@@ -19,4 +19,27 @@ Flujo principal UC "Ver solicitudes":
 	3'.Vecino quiere ver recibo: ejecutar caso de uso "Ver recibo"
 	3'.Vecino quiere filtrar las solicitudes: ejecutar caso de uso "Filtrar"
 	3'.Vecino quiere ver el estado de una solicitud: ejecutar el caso de uso "Ver estado"
-	
+
+Caso de uso: Filtrar
+Actor principal: Vecino
+Actores involucrados: 
+	-Vecino quiere filtrar la lista de solicitudes basado en uno o varios aspectos
+Precondiciones:
+	-Vecino debe tener solicitudes
+Postcondiciones:
+	-Vecino puede ver las solicitudes filtradas
+Flujo principal:
+	1.Vecino escoge el filtro para la lista
+	2.Sistema filtra la lista y la muestra en pantalla
+
+Caso de uso: Ver recibo
+Actor principal: Vecino
+Actores involucrados: 
+	-Vecino quiere ver el recibo de una solicitud completada
+Precondiciones:
+	-Vecino debe tener al menos una solicitud marcada como completada
+Postcondiciones:
+	-Vecino es capaz de ver el recibo correspondiente a la solicitud
+Flujo principal:
+	1.Vecino escoge la solicitud para ver el recibo
+	2.Sistema crea y otorga el recibo al vecino

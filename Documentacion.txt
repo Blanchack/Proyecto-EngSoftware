@@ -59,7 +59,7 @@ Flujo principal:
 	Extensiones:
 	2'.Si el estado de la solicitud es "rechazada": ejecutar caso de uso "apelar solicitud"
 
-Caso de uso "apelar solicitud"
+Caso de uso apelar solicitud
 Actor principal: Vecino
 Actores involucrados: 
 	-Vecino quiere apelar al rechazo de su solicitud
@@ -71,3 +71,4 @@ Flujo principal:
 	1.Vecino escoge una solicitud rechazada
 	2.Sistema muestra un mensaje dando la razón del rechazo
 	3.Vecino apela a la decisión de la cooperativa
+

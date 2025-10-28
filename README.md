@@ -22,6 +22,6 @@ El programa buscar modernizar el proceso de recoleccion de basura, mejorando tie
 5. El sistema debe contar con un chat de soporte para atender las quejas de los vecinos.
 
 # Actores
-- Conductores de los camiones recolectores: Usuarios del sistema que interactuan principalmente con la parte de rutas para la recoleccion eficiente de la basura.
-- Administrador del centro de recolección: Usuarios que se encargar de procesar las solicitudes y validar su factibilidad y veracidad.
-- Vecinos: Usuarios finales del sistema, quienes elevan las solicitudes para la recolección de sus deshechos.
+- Conductor de los camiones recolectores: Usuarios del sistema que interactuan principalmente con la parte de rutas para la recoleccion eficiente de la basura.
+- Cooperativa: Usuarios que se encargar de procesar las solicitudes y validar su factibilidad y veracidad.
+- Vecino: Usuarios finales del sistema, quienes elevan las solicitudes para la recolección de sus deshechos.

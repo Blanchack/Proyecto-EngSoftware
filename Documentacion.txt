@@ -1,43 +1,22 @@
-Documentación
-Caso de uso UC1: Ingresar Solicitud
+Caso de uso: Ver solicitudes
 Actor principal: Vecino
-Actores involucrados:
-  - Vecino: ingresar la solicitud
-  - Servicio de geolocalización: verificar la ubicación del vecino
-Precondiciones:
-  - El vecino debe ser un usuario verificado.
-Post condiciones:
-  - La cooperativa visualiza la solicitud correctamente.
-  - Vecino obtiene un recibo con la información del caso ingresado exitosamente
-Escenario principal de exito (flujo básico)
-  1. El vecino ingresa su solicitud de reciclaje.
-  2. El servicio de geolocalización verificar la ubicación del vecino.
-  3. Con la respuesta del servicio, el sistema asigna el caso a la cooperativa que corresponda.
-  4. La cooperativa recibe con exito la solicitud para su procesamiento.
-Extensiones:
-  3' El sistema recibe una señal de error desde el servicio de geolocalización
-    - El sistema intente denuevo hasta 3 veces.
-    - Si el error persiste se le notifica al vecino para intentar denuevo
-    
-  
-
-Caso de uso UC2: Revisar la ruta
-Actor principal: Conductor
 Actores involucrados: 
-  - Cooperativa: Confirmar ruta para el conductor
-  - Conductor: Revisar la ruta
+	-Vecino quiere revisar las solicitudes ingresadas
 Precondiciones:
-  - La cooperativa visualiza varias opciones de rutas
+	-Vecino debe tener un perfil verificado para poder ingresar solicitudes
+	-Vecino debe tener alguna solicitud para poder revisarla
 Postcondiciones:
-  - El conductor puede ver la ruta a seguir.
-Escenario principal de exito (flujo)
-  - La cooperativa escoge la ruta a seguir
-  - Se le envia la ruta al conductor
-  - Conductor recibe la ruta correctamente.
-Extensiones:
-  1' Problemas en la ruta
-  - El conductor da aviso de algun problema en la ruta a la cooperativa
-  - La cooperativa revisa alternativas para la ruta
-  - Se actualiza la ruta del conductor
-
-
+	-Vecino es capaz de ver todas las solicitudes, opcionalmente puede:
+		-Revisar el estado de una solicitud
+		-Ver el recibo de una solicitud
+		-Filtrar la lista de solicitudes, en caso de tener varias
+Flujo principal UC "Ver solicitudes":
+	1.Vecino solicita revisar las solicitudes
+	2.Sistema carga las solicitudes asociadas al vecino
+	3.Vecino es capaz de visualizar las solicitudes
+	
+	Extensiones:
+	3'.Vecino quiere ver recibo: ejecutar caso de uso "Ver recibo"
+	3'.Vecino quiere filtrar las solicitudes: ejecutar caso de uso "Filtrar"
+	3'.Vecino quiere ver el estado de una solicitud: ejecutar el caso de uso "Ver estado"
+	

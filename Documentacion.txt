@@ -43,3 +43,31 @@ Postcondiciones:
 Flujo principal:
 	1.Vecino escoge la solicitud para ver el recibo
 	2.Sistema crea y otorga el recibo al vecino
+
+Caso de uso: Ver estado
+Actor principal:Vecino
+Actores involucrados:
+	-Vecino quiere ver el estado de una solicitud: "Asignada", "revisada", "pendiente", "rechazada"
+Precondiciones:
+	-Vecino debe tener almenos una solicitud ingresada
+Postcondiciones:
+	-Vecino es capaz de ver el estado de la solicitud
+	-Vecino es capaz de apelar al rechazo de la solicitud.
+Flujo principal:
+	1.Vecino escoge la solicitud para ver su estado
+	2.Sistema muestra el estado de la solicitud
+	Extensiones:
+	2'.Si el estado de la solicitud es "rechazada": ejecutar caso de uso "apelar solicitud"
+
+Caso de uso "apelar solicitud"
+Actor principal: Vecino
+Actores involucrados: 
+	-Vecino quiere apelar al rechazo de su solicitud
+Precondiciones:
+	-Vecino debe tener una solicitud con el estado = "rechazada"
+Postcondiciones:
+	-Vecino visualiza un mensaje de razon para el rechazo y puede apelar
+Flujo principal:
+	1.Vecino escoge una solicitud rechazada
+	2.Sistema muestra un mensaje dando la razón del rechazo
+	3.Vecino apela a la decisión de la cooperativa
